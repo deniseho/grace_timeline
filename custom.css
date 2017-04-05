@@ -1,0 +1,159 @@
+body {
+  font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+}
+ 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {display:none;}
+ 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  padding: 20% 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+strong {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/*頁面*/
+section {
+  height: 100%;
+  position: relative;
+  text-align: center;  
+}
+ 
+/* Center aligned first section */
+section .inner {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+/* ------------ 得恩堂歷史 ------------ */
+
+/* 得恩堂歷史欄位 */
+section .innerText {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  transform: translate(-100px, -50%);
+  text-align: left;
+  width: 40%;
+  line-height: 28px;  
+}
+
+section .section-wrap{
+  height: 100vh;
+  width: 50%;
+  border-top: 1px dashed #fff;
+  border-bottom:1px dashed #fff;
+}
+
+/*年代*/
+.era{
+  font-size: 80px;
+  margin: 0;
+  color: rgba(255,255,255, 0.9);
+}
+
+
+/* ------------ 眼鏡變革 ------------ */
+
+/* 眼鏡變革欄位 */
+.glasses-history {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  /*transform: translate(-150%, -50%);*/
+}
+ 
+/* 眼鏡欄位置中 */
+.glasses-history .screen {
+  margin: 0;
+  position: absolute;
+  top: 14vh;
+  right: 0;
+  /*transform: translate(-50%, -50%);*/
+}
+
+/* 眼鏡圖片 */
+.glasses-history .screen img{
+  z-index: -1;
+  width: 500px;
+  margin-left: 5%;
+}
+ 
+/* 預設隱藏眼鏡 */
+.glasses-history .screen {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.glasses-name, 
+.glasses-intro{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  /*transform: translate(-50%, -50%);*/
+}
+
+.glasses-name {
+  top: 55vh;
+  margin-left: 3em;
+}
+
+.glasses-intro {
+  top: 65vh;
+  color: rgba(000,000,000, 0.6);
+  margin-left: 4.5em;
+  max-width: 400px;
+}
+
+/* Bullet list */
+.features {
+  /*background-image: -webkit-linear-gradient(90deg, #f1f1f1, #dbdbdb);
+  background-image: linear-gradient(90deg, #f1f1f1, #dbdbdb);  */
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.9);
+  list-style: none;
+  margin: 0;
+  margin-top: 2em;
+  padding: 1em 2em;
+  color: rgba(0, 0, 0, 0.7);
+}
+.features li {
+  position: relative;
+  padding-left: 17px;  
+}
+ 
+/* A heart instead of a bullet */
+.features li:before {
+  /*content: '❤';*/
+  content: '*';
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: block;
+  color: #ff466a;
+}
+
+.features li strong{
+  margin-right: 10px;
+}
+
+
